@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <NoStdLib>true</NoStdLib>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2788E0A3-3542-42D5-BE8D-EF8C736E23F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestBuild</RootNamespace>
+    <AssemblyName>TestBuild</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Array.cs" />
+    <Compile Include="Bitmap.cs" />
+    <Compile Include="BitmapData.cs" />
+    <Compile Include="BlurFilter.cs" />
+    <Compile Include="Bridge\achievements.swf.cs" />
+    <Compile Include="Bridge\apartments.swf.cs" />
+    <Compile Include="Bridge\casesKeysResources.swf.cs" />
+    <Compile Include="Bridge\chat.swf.cs" />
+    <Compile Include="Bridge\chests.swf.cs" />
+    <Compile Include="Bridge\collections.swf.cs" />
+    <Compile Include="Bridge\components.swf.cs" />
+    <Compile Include="Bridge\dialogOffer.swf.cs" />
+    <Compile Include="Bridge\dialogPresents.swf.cs" />
+    <Compile Include="Bridge\dialogProfile.swf.cs" />
+    <Compile Include="Bridge\dialogs.swf.cs" />
+    <Compile Include="Bridge\emotions.swf.cs" />
+    <Compile Include="Bridge\eng.swf.cs" />
+    <Compile Include="Bridge\events.swf.cs" />
+    <Compile Include="Bridge\halloween.swf.cs" />
+    <Compile Include="Bridge\header.swf.cs" />
+    <Compile Include="Bridge\heart.swf.cs" />
+    <Compile Include="Bridge\houseResources.swf.cs" />
+    <Compile Include="Bridge\loveTree.swf.cs" />
+    <Compile Include="Bridge\mafia.swf.cs" />
+    <Compile Include="Bridge\march.swf.cs" />
+    <Compile Include="Bridge\moneyBox.swf.cs" />
+    <Compile Include="Bridge\pendant.swf.cs" />
+    <Compile Include="Bridge\pets.swf.cs" />
+    <Compile Include="Bridge\petsActions.swf.cs" />
+    <Compile Include="Bridge\petsBoosters.swf.cs" />
+    <Compile Include="Bridge\petsProfile.swf.cs" />
+    <Compile Include="Bridge\powerUps.swf.cs" />
+    <Compile Include="Bridge\preloader.swf.cs" />
+    <Compile Include="Bridge\profile.swf.cs" />
+    <Compile Include="Bridge\promo.swf.cs" />
+    <Compile Include="Bridge\promoEn.swf.cs" />
+    <Compile Include="Bridge\puzzles.swf.cs" />
+    <Compile Include="Bridge\ratings.swf.cs" />
+    <Compile Include="Bridge\resources.swf.cs" />
+    <Compile Include="Bridge\ResourcesExternalLib.cs" />
+    <Compile Include="Bridge\screens.swf.cs" />
+    <Compile Include="Bridge\smiles.swf.cs" />
+    <Compile Include="Bridge\symbol_b8b57645efe1fee806fd1160a4788c53.cs" />
+    <Compile Include="Bridge\vip.swf.cs" />
+    <Compile Include="Bridge\wedding.swf.cs" />
+    <Compile Include="Bridge\weddingResources.swf.cs" />
+    <Compile Include="ColorMatrixFilter.cs" />
+    <Compile Include="FrameInfo.cs" />
+    <Compile Include="GlowFilter.cs" />
+    <Compile Include="MorphShape.cs" />
+    <Compile Include="MovieClip.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="SimpleButton.cs" />
+    <Compile Include="Sprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bridge\output\readme.txt" />
+    <Content Include="Bridge\www\demo.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bridge\bridge.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Bridge, Version=15.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bridge.Core.15.3.0\lib\net40\Bridge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bridge.Html5, Version=15.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bridge.Html5.15.3.0\lib\net40\Bridge.Html5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Bridge.Min.15.3.0\build\Bridge.Min.targets" Condition="Exists('..\packages\Bridge.Min.15.3.0\build\Bridge.Min.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Bridge.Min.15.3.0\build\Bridge.Min.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Bridge.Min.15.3.0\build\Bridge.Min.targets'))" />
+  </Target>
+</Project>

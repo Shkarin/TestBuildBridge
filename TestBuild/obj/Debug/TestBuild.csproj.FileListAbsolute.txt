@@ -1,0 +1,17 @@
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\TestBuild.dll
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\TestBuild.pdb
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\Bridge.dll
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\Bridge.Html5.dll
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\Bridge.xml
+D:\Projects\TestBuild\TestBuild\TestBuild\bin\Debug\Bridge.Html5.xml
+D:\Projects\TestBuild\TestBuild\TestBuild\obj\Debug\TestBuild.dll
+D:\Projects\TestBuild\TestBuild\TestBuild\obj\Debug\TestBuild.pdb
+d:\TestBuild\TestBuild\bin\Debug\TestBuild.dll
+d:\TestBuild\TestBuild\bin\Debug\TestBuild.pdb
+d:\TestBuild\TestBuild\bin\Debug\Bridge.dll
+d:\TestBuild\TestBuild\bin\Debug\Bridge.Html5.dll
+d:\TestBuild\TestBuild\bin\Debug\Bridge.xml
+d:\TestBuild\TestBuild\bin\Debug\Bridge.Html5.xml
+d:\TestBuild\TestBuild\obj\Debug\TestBuild.csprojResolveAssemblyReference.cache
+d:\TestBuild\TestBuild\obj\Debug\TestBuild.dll
+d:\TestBuild\TestBuild\obj\Debug\TestBuild.pdb
